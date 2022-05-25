@@ -2,6 +2,16 @@
   "name": "vue3-ts-vuetify",
   "version": "0.1.0",
   "private": true,
+  "description": "Template for Vue 3, TypeScript and Vuetify",
+  "keywords": ["Vue 3", "Typescript", "Vuetify"],
+  "homepage": "https://github.com/manuelgarciacr/vue3-ts-vuetify",
+  "bugs": "https://github.com/manuelgarciacr/vue3-ts-vuetify/issues",
+  "license": "ISC",
+  "author": "Manuel García Criado",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manuelgarciacr/vue3-ts-vuetify.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
