@@ -51,3 +51,14 @@ module.exports = {
     ...
 }
 ```
+
+## 3) Vuetify install
+
+### Installing Vuetify selecting the Vuetify 3 Preview and the nightly build.
+
+```
+vue add vuetify
+
+Choose a preset: Vuetify 3 Preview (Vuetify 3)
+? Would you like to install Vuetify 3 nightly build? (WARNING: Nightly builds are intended for development testing and may include bugs or other issues.) Yes
+```
