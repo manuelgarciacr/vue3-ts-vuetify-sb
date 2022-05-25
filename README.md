@@ -34,3 +34,20 @@ Vue CLI v5.0.4
 ? Pick an E2E testing solution: Cypress
 ? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config 
 ```
+
+## 2) Vue settings
+
+### Configuring eslint to not warn about vue macros
+
+```
+// .eslintrc.js
+
+module.exports = {
+    ...,
+    env: {
+        ...,
+        'vue/setup-compiler-macros': true
+    },
+    ...
+}
+```
