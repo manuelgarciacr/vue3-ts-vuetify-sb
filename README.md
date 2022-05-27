@@ -1,6 +1,6 @@
-# vue3-ts-vuetify
+# vue3-ts-vuetify-sb
 
-Template for Vue 3, TypeScript and Vuetify.
+Template for Vue 3, TypeScript, Vuetify and Storybook.
 
 ## 1) Vue3 install
 
@@ -194,5 +194,16 @@ src/components/GroupCard.vue
 Added to:
 
 src/components/HelloWorld.vue
+```
+
+## 7) Storybook install
+
+### Installing Storybook from npm (Without using the vue storybook plugin). Using the eslintPlugin migration.
+
+```
+npx sb init
+
+Do you want to run the 'eslintPlugin' migration on your project? ... yes   
+✅ Adding dependencies: eslint-plugin-storybook
 ```
 
