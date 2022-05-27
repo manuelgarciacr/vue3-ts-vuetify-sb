@@ -207,3 +207,24 @@ Do you want to run the 'eslintPlugin' migration on your project? ... yes
 ✅ Adding dependencies: eslint-plugin-storybook
 ```
 
+## 8) Storybook webpack issue
+
+### Vue3 is using webpack4. Updatting storybook to webpack5.
+<br/>
+
+Stackoverflow error fix: [Webpack error adding storybook to create-react-app. Answer](https://stackoverflow.com/a/70827263/10204768)
+```
+npm remove @storybook/builder-webpack4 @storybook/manager-webpack4
+
+npm install @storybook/builder-webpack5 @storybook/manager-webpack5 --save-dev
+
+// .storybook/main.js
+module.exports = {
+    ...
+    "core": {
+        "builder": 'webpack5',
+    },
+    ...
+};
+```
+
