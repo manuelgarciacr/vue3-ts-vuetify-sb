@@ -283,3 +283,23 @@ export const decorators = [story => ({
 })]
 ...
 ```
+## 11) Storybook vuetify loader support
+
+### Adding vuetify loader support by the main.js configuration file.
+
+```
+// .storybook/main.js
+
+...
+const { VuetifyPlugin } = require('webpack-plugin-vuetify');
+
+module.exports = {
+    ...,
+    webpackFinal: async (config, { configType }) => {
+        ...;
+        config.plugins.push(new VuetifyPlugin({ autoImport: true }));
+        ...
+    },
+    ...
+}
+```

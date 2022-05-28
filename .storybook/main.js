@@ -1,4 +1,5 @@
 const path = require('path');
+const { VuetifyPlugin } = require('webpack-plugin-vuetify');
 
 module.exports = {
     "stories": [
@@ -26,6 +27,8 @@ module.exports = {
             include: path.resolve(__dirname, '../'),
         });
 
+        config.plugins.push(new VuetifyPlugin({ autoImport: true }));
+        
         // Return the altered config
         return config;
     }
