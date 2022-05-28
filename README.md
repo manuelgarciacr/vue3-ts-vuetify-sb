@@ -228,6 +228,10 @@ module.exports = {
 };
 ```
 
+## Storybook support
+
+Storybook uses its own application entry point, bypassing the 'src/main.ts' file. We must configure our environment within the configuration files in the '.storybook' folder.
+
 ## 9) Storybook sass support
 
 ### Adding sass support by the webpackFinal field of .storybook/main.js.
@@ -259,5 +263,23 @@ module.exports = {
     ...
 };
 ```
+## 10) Storybook vuetify support
 
+### Adding vuetify support by the preview.js render file.
 
+```
+// .storybook/preview.js
+
+...
+import { app } from '@storybook/vue3'
+import vuetify from '../src/plugins/vuetify'
+import { VApp } from 'vuetify/components';
+  
+app.use(vuetify).component("VApp", VApp)
+
+export const decorators = [story => ({
+    components: { story },
+    template: '<v-app><story /></v-app>',
+})]
+...
+```
