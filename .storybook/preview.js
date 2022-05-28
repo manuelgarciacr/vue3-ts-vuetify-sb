@@ -1,7 +1,10 @@
 import { app } from '@storybook/vue3'
 import vuetify from '../src/plugins/vuetify'
 import { VApp } from 'vuetify/components';
-  
+import { loadFonts } from '../src/plugins/webfontloader';
+
+loadFonts();
+
 app.use(vuetify).component("VApp", VApp)
 
 export const decorators = [story => ({

@@ -303,3 +303,16 @@ module.exports = {
     ...
 }
 ```
+## 12) Storybook web fonts loader support
+
+### Adding web fonts loader support by the preview.js render file.
+
+```
+// .storybook/preview.js
+
+...
+import { loadFonts } from '../src/plugins/webfontloader';
+
+loadFonts();
+...
+```
