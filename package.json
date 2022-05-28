@@ -1,7 +1,7 @@
 {
   "name": "vue3-ts-vuetify-sb",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "description": "Template for Vue 3, TypeScript, Vuetify and Storybook",
   "keywords": [
     "Vue 3",

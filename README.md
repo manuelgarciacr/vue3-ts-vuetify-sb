@@ -2,6 +2,17 @@
 
 Template for Vue 3, TypeScript, Vuetify and Storybook.
 
+## Installation
+
+Use [degit](https://github.com/Rich-Harris/degit) to install this template.
+
+```
+# Clone the template
+npx degit manuelgarciacr/vue3-ts-vuetify-sb project-name
+```
+
+The steps to create this template were:
+
 ## 1) Vue3 install
 
 ### Installing vue selecting manually the features
@@ -263,6 +274,7 @@ module.exports = {
     ...
 };
 ```
+
 ## 10) Storybook vuetify support
 
 ### Adding vuetify support by the preview.js render file.
@@ -283,6 +295,7 @@ export const decorators = [story => ({
 })]
 ...
 ```
+
 ## 11) Storybook vuetify loader support
 
 ### Adding vuetify loader support by the main.js configuration file.
@@ -303,6 +316,7 @@ module.exports = {
     ...
 }
 ```
+
 ## 12) Storybook web fonts loader support
 
 ### Adding web fonts loader support by the preview.js render file.
@@ -316,3 +330,9 @@ import { loadFonts } from '../src/plugins/webfontloader';
 loadFonts();
 ...
 ```
+
+## 13) Adding story file for the GroupCard.vue component.
+
+### src/components/GroupCard.stories.js
+
+
